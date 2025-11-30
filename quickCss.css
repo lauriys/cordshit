@@ -1,0 +1,355 @@
+/* @import url("https://milbits.github.io/oldcord/src/main.css"); */
+@import url('https://YofukashiNo.github.io/pc-fluenticons/src/fluenticons-base.css');
+@import url('https://YofukashiNo.github.io/pc-fluenticons/src/fluenticons-settings.css');
+@import url('https://YofukashiNo.github.io/pc-fluenticons/src/fluenticons-context.css');
+/* @import url('https://comfy-themes.github.io/Discord/betterdiscord/comfy.theme.css'); */
+/* @import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css"); */
+/* @import url('https://takosthings.github.io/Fluent-Discord/Fluent-Discord.theme.css'); */
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://iys.io/font/SF-Pro-Display-Regular.otf?v=1') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: normal;
+  src: url('https://iys.io/font/SF-Pro-Display-RegularItalic.otf?v=1') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://iys.io/font/SF-Pro-Display-Medium.otf?v=1') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: 500;
+  src: url('https://iys.io/font/SF-Pro-Display-MediumItalic.otf?v=1') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://iys.io/font/SF-Pro-Display-Bold.otf?v=1') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: italic;
+  font-weight: bold;
+  src: url('https://iys.io/font/SF-Pro-Display-BoldItalic.otf?v=1') format('opentype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://iys.io/font/SF-Pro-Display-Light.otf?v=1') format('opentype');
+}
+
+:root {
+  --avatar-radius: 250px;
+  /* --background-secondary: #1e2233; */
+  --background-tertiary: #1e2233; 
+  /* --background-primary: #101014;
+  --background-secondary: #17161b;
+  --background-secondary-alt: #17161b;
+  --background-tertiary: #101014;
+  --background-accent: #4f545c;
+  --background-floating: #17161b; */
+
+  
+  /* --font-primary: 'SF Pro Display', sans-serif !important; */
+  --font-primary: 'SF Pro Display Light', sans-serif !important;
+  --font-display: 'SF Pro Display Light', sans-serif !important;
+  --font-headline: 'SF Pro Display Light', sans-serif !important;
+  --font-code: 'SF Pro Display Light', sans-serif !important;
+
+  --iys-backdrop-filter: blur(20px) saturate(150%) brightness(75%);
+
+  /* --server-radius: 25px;
+  --status-radius: 25px; */
+  letter-spacing: .2px !important;
+}
+
+/* Outdated fix for emojis being blurry */
+:root .emoji.jumboable {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Backdrop blur for context menus */
+:root .menu_c1e9c4 {
+  background: transparent;
+}
+
+:root .menu_c1e9c4::before {
+  backdrop-filter: var(--iys-backdrop-filter);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 5px;
+  content: '';
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* :root .clickTrapContainer__59d0d > .layer__59d0d {
+  backdrop-filter: blur(20px) saturate(150%);
+  background: rgba(0, 0, 0, 0.5);
+  transform: none;
+} */
+
+/* tooltipContent_c36707 listItemTooltipContent__90d72 */
+:root .tooltip_c36707, :root .tooltip__4e35b {
+  /* backdrop-filter: blur(20px) saturate(150%); */
+  border: 1px solid var(--border-faint);
+  box-shadow: none;
+  transform: none;
+
+  .caret__5bc6a {
+    display: none;
+  }
+}
+
+:root .tooltip_c36707 {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: var(--iys-backdrop-filter);
+}
+
+:root .tooltip__4e35b {
+  /* backdrop-filter: blur(20px) saturate(150%); */
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* "Fix" for gap between context menus */
+:root .submenuPaddingContainer__12a9d {
+  margin-left: -8px !important;
+  padding-left: 8px !important;
+}
+
+/* :root .panels_a4d4d9 {
+  height: 16px;
+} */
+
+/* :root .scroller_c43953 {
+  margin-bottom: 24px;
+} */
+
+/* Attempt to take user buttons out of the abyss */
+/* :root .panels__5e434 > .container_e131a9 {
+  height: 32px;
+} */
+
+.container__2637a {
+  padding-bottom: var(--space-xs);
+
+  .scroller__629e4 {
+    padding-bottom: var(--custom-app-panels-height, 0);
+  }
+}
+
+/* stick the chatbox to the bottom + fix everything that entails */
+.bottomBar__0f481 {
+  backdrop-filter: var(--iys-backdrop-filter);
+  background: transparent;
+  border: 1px solid var(--border-faint);
+}
+
+.channelTextArea__74017 {
+  border: 0;
+  border-top: 1px solid var(--border-faint);
+  border-radius: 0;
+}
+
+.channelTextArea_f75fb0 {
+  backdrop-filter: var(--iys-backdrop-filter);
+  background: transparent;
+
+  .themedBackground__74017 {
+    background: transparent;
+  }
+}
+
+.container__5e434 {
+  --custom-chat-input-margin-bottom: 1px;
+}
+
+.form_f75fb0 {
+  margin-top: -76px;
+}
+
+.formWithLoadedChatInput_f75fb0 {
+  padding-inline: 0px;
+}
+
+.gradientDefault__36d07 {
+  mask: none;
+  /* mask: linear-gradient(180deg, #000, transparent) bottom / 100% 128px no-repeat, linear-gradient(#000, #000) top / 100% calc(100% - 127px) no-repeat; */
+}
+
+.jumpToPresentBar__0f481 {
+  bottom: calc(var(--custom-channel-textarea-text-area-height) + 28px);
+}
+
+.placeholder__1b31f {
+  color: rgba(255, 255, 255, .5);
+}
+
+.scrollerInner__36d07 {
+  padding-bottom: 60px;
+}
+
+.typing_b88801 {
+  /* border-bottom: 1px solid var(--app-border-frame); */
+  /* border-top: 1px solid var(--app-border-frame); */
+  /* padding: 2px; */
+  /* background: linear-gradient(180deg, transparent, black) */
+
+  &::before {
+    /* backdrop-filter: blur(20px) saturate(200%); */
+    /* background: rgba(0, 0, 0, 1); */
+    content: '';
+    height: 100%;
+    /* mask: linear-gradient(180deg, transparent, black); */
+    position: absolute;
+    width: 100%;
+  }
+
+  &.base_b88801 {
+    /* top: -25px; */
+  }
+}
+
+.typingGradientAtBottom__36d07 {
+  /* mask: none; */
+  /* mask: linear-gradient(180deg, #000, transparent) bottom / 100% 112px no-repeat, linear-gradient(#000, #000) top / 100% calc(100% - 111px) no-repeat; */
+}
+
+.typingGradientNotAtBottom__36d07 {
+  mask: none;
+  /* mask: linear-gradient(180deg, #000, transparent 32px, black) bottom /100% 32px no-repeat, linear-gradient(#000, #000) top /100% calc(100% - 31px) no-repeat; */
+}
+
+/* bottom left corner panels */
+.panels__5e434 {
+  --custom-panels-spacing: 0px;
+  backdrop-filter: var(--iys-backdrop-filter);
+  background: transparent;
+  border: 1px solid var(--border-faint);
+  border-right: none;
+  border-radius: 0;
+
+  /* take a fucking guess */
+  & > #vc-spotify-player {
+    /* backdrop-filter: var(--iys-backdrop-filter); */
+    padding: 16px;
+  }
+
+  /* that's the game activity! */
+  & > .activityPanel__5e434 {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-faint);
+    padding: 16px;
+  }
+
+  /* blurs behind the namecard panel */
+  & > .container__37e49 {
+    /* backdrop-filter: var(--iys-backdrop-filter); */
+    border-radius: 0;
+  }
+
+  /* blurs behind the voice chat panel */
+  & > .wrapper_e131a9 {
+    /* backdrop-filter: var(--iys-backdrop-filter); */
+
+    & > .container_e131a9 {
+      padding: 16px;
+    }
+  }
+
+  /* the quest progress */
+  .wrapper__0d616 {
+    background: transparent !important;
+    border-bottom: 1px solid var(--border-faint);
+
+    .contentWrapper__0d616 {
+      background-color: transparent;
+
+      .background__22c64 {
+        background: transparent;
+        /* background-image: none; */
+      }
+
+      .contentCollapsedAccepted__5f897 {
+        padding: 16px 12px;
+      }
+
+      .contentExpandedAccepted__636a2 {
+        padding: 14px 16px;
+      }
+
+      .postEnrollmentBackground__636a2 {
+        background: transparent !important;
+        background-image: unset !important;
+        border-top: unset;
+      }
+    }
+  }
+}
+
+/* :root .panels__5e434 > .wrapper_e131a9 > .container_e131a9 > .flex__7c0ba { */
+  /* backdrop-filter: blur(20px); */
+  /* background: transparent;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 0;
+  padding: 2px; */
+  /* position: absolute; */
+  /* width: 100%; */
+/* } */
+
+:root .messageContent_c19a55 > a[title*="("] {
+  color: var(--text-danger);
+}
+
+:root .messageContent_c19a55 > a[title*="("]::after {
+  color: var(--text-muted);
+  content: " (" attr(href) ")";
+}
+
+/* *[class^='nowPlayingColumn'] {
+  display: none;
+} */
+
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/* Hide GIF picker button */
+button[aria-label="Open GIF picker"] {
+    display: none;
+}
+
+/* Hide fucking apps */
+div[class^="channelAppLauncher_"] {
+    display: none;
+}
+
+/* stop gradients from showing up */
+/* .usernameGradient_e5de78 .vc-smyn-suffix {
+  position: relative;
+  text-shadow: 0 0 1px rgba(255, 255, 255, .7);
+} */
