@@ -150,14 +150,6 @@
   height: 32px;
 } */
 
-.container__2637a {
-  padding-bottom: var(--space-xs);
-
-  .scroller__629e4 {
-    padding-bottom: var(--custom-app-panels-height, 0);
-  }
-}
-
 /* stick the chatbox to the bottom + fix everything that entails */
 .bottomBar__0f481 {
   backdrop-filter: var(--iys-backdrop-filter);
@@ -182,6 +174,30 @@
 
 .container__5e434 {
   --custom-chat-input-margin-bottom: 1px;
+
+  /* padding out the channel list */
+  .container__2637a {
+    padding-bottom: var(--space-xs);
+
+    .scroller__629e4 {
+      padding-bottom: var(--custom-app-panels-height, 0);
+    }
+  }
+
+  /* padding out the dm list */
+  .scroller__99e7c {
+    margin-bottom: var(--space-xs);
+    padding-bottom: var(--custom-app-panels-height, 0);
+  }
+
+  /* padding out the server list */
+  .wrapper_ef3116 {
+    margin-bottom: var(--space-xs);
+
+    .scroller_ef3116 {
+      padding-bottom: var(--custom-app-panels-height, 0);
+    }
+  }
 }
 
 .form_f75fb0 {
