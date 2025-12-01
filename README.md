@@ -10,3 +10,5 @@ go to therapy
 
 ### comeeee oooon
 `@import url('https://raw.githubusercontent.com/lauriys/cordshit/refs/heads/master/quickCss.css');`
+
+###### tested exclusively on onyx
