@@ -349,19 +349,21 @@
   display: none;
 } */
 
-/* Hide Nitro gift button */
-button[aria-label="Send a gift"] {
+.buttons__74017 {
+  /* Nuke the Nitro gift button */
+  div[aria-label="Send a gift"] {
     display: none;
-}
+  }
 
-/* Hide GIF picker button */
-button[aria-label="Open GIF picker"] {
+  /* Hide GIF picker button */
+/*  div[aria-label="Open GIF picker"] {
     display: none;
-}
+  }*/
 
-/* Hide fucking apps */
-div[class^="channelAppLauncher_"] {
+  /* Nuke the fucking apps icon */
+  div[aria-label="Apps"] {
     display: none;
+  }
 }
 
 /* stop gradients from showing up */
