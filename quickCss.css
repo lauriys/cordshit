@@ -74,6 +74,7 @@
   --font-code: 'SF Pro Display Light', sans-serif !important;
 
   --iys-backdrop-filter: blur(20px) saturate(150%) brightness(75%);
+  --iys-border: var(--border-subtle);
 
   /* --server-radius: 25px;
   --status-radius: 25px; */
@@ -112,7 +113,7 @@
 /* tooltipContent_c36707 listItemTooltipContent__90d72 */
 :root .tooltip_c36707, :root .tooltip__4e35b {
   /* backdrop-filter: blur(20px) saturate(150%); */
-  border: 1px solid var(--border-faint);
+  border: 1px solid var(--iys-border);
   box-shadow: none;
   transform: none;
 
@@ -154,12 +155,12 @@
 .bottomBar__0f481 {
   backdrop-filter: var(--iys-backdrop-filter);
   background: transparent;
-  border: 1px solid var(--border-faint);
+  border: 1px solid var(--iys-border);
 }
 
 .channelTextArea__74017 {
   border: 0;
-  border-top: 1px solid var(--border-faint);
+  border-top: 1px solid var(--border-subtle);
   border-radius: 0;
 }
 
@@ -261,7 +262,7 @@
   --custom-panels-spacing: 0px;
   backdrop-filter: var(--iys-backdrop-filter);
   background: transparent;
-  border: 1px solid var(--border-faint);
+  border: 1px solid var(--iys-border);
   border-right: none;
   border-radius: 0;
 
@@ -274,7 +275,7 @@
   /* that's the game activity! */
   & > .activityPanel__5e434 {
     background-color: transparent;
-    border-bottom: 1px solid var(--border-faint);
+    border-bottom: 1px solid var(--iys-border);
     padding: 16px;
   }
 
@@ -296,7 +297,7 @@
   /* the quest progress */
   .wrapper__0d616 {
     background: transparent !important;
-    border-bottom: 1px solid var(--border-faint);
+    border-bottom: 1px solid var(--iys-border);
 
     .contentWrapper__0d616 {
       background-color: transparent;
