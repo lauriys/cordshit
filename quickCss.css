@@ -74,7 +74,7 @@
   --font-code: 'SF Pro Display Light', sans-serif !important;
 
   --iys-backdrop-filter: blur(20px) saturate(150%) brightness(75%);
-  --iys-border: var(--border-subtle);
+  --iys-border: rgba(255, 255, 255, .15);
 
   /* --server-radius: 25px;
   --status-radius: 25px; */
@@ -160,7 +160,7 @@
 
 .channelTextArea__74017 {
   border: 0;
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--iys-border);
   border-radius: 0;
 }
 
@@ -267,9 +267,57 @@
   border-radius: 0;
 
   /* take a fucking guess */
-  & > #vc-spotify-player {
-    /* backdrop-filter: var(--iys-backdrop-filter); */
+  #vc-spotify-player {
+    backdrop-filter: blur(50px);
+    background: transparent;
+    border-bottom: 1px solid var(--iys-border);
+    border-radius: 0;
+    overflow: hidden;
     padding: 16px;
+    position: relative;
+
+    #vc-spotify-album-image {
+      box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, .1);
+    }
+
+    #vc-spotify-progress-bar {
+
+      .bar_a562c8 {
+        background-color: var(--iys-border);
+
+        .barFill_a562c8 {
+          background-color: transparent;
+          border: none;
+          overflow: hidden;
+          position: relative;
+
+          &::before {
+            background: var(--vc-spotify-track-image);
+            background-position: center;
+            content: '';
+            filter: blur(50px) saturate(200%);
+            left: 0;
+            height: 320px;
+            position: absolute;
+            top: -160px;
+            width: 320px;
+          }
+        }
+      }
+    }
+
+    &::before {
+      animation: iys-slow-spin 30s infinite linear;
+      background: var(--vc-spotify-track-image);
+      content: '';
+      filter: blur(25px) opacity(25%);
+      height: 640px;
+      left: -50%;
+      position: absolute;
+      top: -50%;
+      width: 640px;
+      z-index: -1;
+    }
   }
 
   /* that's the game activity! */
@@ -290,6 +338,7 @@
     /* backdrop-filter: var(--iys-backdrop-filter); */
 
     & > .container_e131a9 {
+      border-bottom: 1px solid var(--iys-border);
       padding: 16px;
     }
   }
@@ -377,3 +426,12 @@
   position: relative;
   text-shadow: 0 0 1px rgba(255, 255, 255, .7);
 } */
+
+@keyframes iys-slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
