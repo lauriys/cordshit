@@ -366,6 +366,11 @@
   }
 }
 
+/* make it more obvious what's edited and what isn't */
+.messagelogger-edited {
+  filter: brightness(30%) !important;
+}
+
 /* stop gradients from showing up */
 /* .usernameGradient_e5de78 .vc-smyn-suffix {
   position: relative;
