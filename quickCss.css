@@ -1,11 +1,3 @@
-/* @import url("https://milbits.github.io/oldcord/src/main.css"); */
-@import url('https://YofukashiNo.github.io/pc-fluenticons/src/fluenticons-base.css');
-@import url('https://YofukashiNo.github.io/pc-fluenticons/src/fluenticons-settings.css');
-@import url('https://YofukashiNo.github.io/pc-fluenticons/src/fluenticons-context.css');
-/* @import url('https://comfy-themes.github.io/Discord/betterdiscord/comfy.theme.css'); */
-/* @import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css"); */
-/* @import url('https://takosthings.github.io/Fluent-Discord/Fluent-Discord.theme.css'); */
-
 @font-face {
   font-family: 'SF Pro Display';
   font-style: normal;
@@ -56,18 +48,6 @@
 }
 
 :root {
-  --avatar-radius: 250px;
-  /* --background-secondary: #1e2233; */
-  --background-tertiary: #1e2233; 
-  /* --background-primary: #101014;
-  --background-secondary: #17161b;
-  --background-secondary-alt: #17161b;
-  --background-tertiary: #101014;
-  --background-accent: #4f545c;
-  --background-floating: #17161b; */
-
-  
-  /* --font-primary: 'SF Pro Display', sans-serif !important; */
   --font-primary: 'SF Pro Display Light', sans-serif !important;
   --font-display: 'SF Pro Display Light', sans-serif !important;
   --font-headline: 'SF Pro Display Light', sans-serif !important;
@@ -76,8 +56,6 @@
   --iys-backdrop-filter: blur(20px) saturate(150%) brightness(75%);
   --iys-border: rgba(255, 255, 255, .15);
 
-  /* --server-radius: 25px;
-  --status-radius: 25px; */
   letter-spacing: .2px !important;
 }
 
