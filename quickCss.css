@@ -284,6 +284,16 @@
       }
     }
 
+    #vc-spotify-titles {
+      #vc-spotify-song-title {
+        color: white;
+      }
+
+      .vc-spotify-secondary-song-info {
+        color: rgba(255, 255, 255, .5);
+      }
+    }
+
     &::before {
       animation: iys-slow-spin 30s infinite linear;
       background: var(--vc-spotify-track-image);
